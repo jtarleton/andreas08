@@ -1,0 +1,8 @@
+{
+    "name": "jtarleton/andreas08",
+    "description": "Fork of andreas08",
+    "type": "project",
+    "require": {
+        "kassner/log-parser": "1.0"
+    }
+}

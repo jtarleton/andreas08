@@ -12,7 +12,28 @@
           <div class="primary callout">
              <p>
               CLIENT ipsum dolor sit amet, eam et solum fuisset patrioque. At nominati accommodare qui, sensibus disputationi duo cu. Animal nominavi eu qui, ius decore pertinax ea. Discere hendrerit id cum. Salutatus temporibus has cu, vim habeo dicant ea. No sale graecis tractatos vis. In nisl scaevola laboramus has. Vel cu eirmod delicata, id sit tamquam minimum. Qui cu laudem prodesset reformidans. Has no illud fuisset. Eu mel decore praesent laboramus. Nonumy delenit lucilius no sed, nonumy atomorum intellegebat vis ei, ex vidit iudicabit sed. Ne eam eripuit eruditi accusata, omnium accusam mei an. 
-            </p>
+	    </p>
+
+<table>
+<?php
+
+
+
+
+$fields = array(
+'HTTP_USER_AGENT',
+'REMOTE_ADDR',
+'REQUEST_METHOD',
+'REQUEST_TIME',
+'REMOTE_HOST');
+foreach($fields as $field) {
+echo sprintf('<tr><td>%s</td><td>%s</td></tr>', $field, $_SERVER[$field]);
+}
+
+
+?>
+</table>
+
           </div>
         </div>
         <div class="large-4 medium-4 small-4 cell">
